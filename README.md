@@ -12,7 +12,7 @@ For Growth or Community Edition users, use the version intended for those.
 The application checks to see if your products have a UPC but no barcode. It will then generate the scannable barcodes and place them into the products.
 
 ## Setting it up
-#### Your PIM must have the following *non-scopable* attributes:
+#### Your PIM must have the following *non-scopable and non-localizable* attributes:
 + Barcode image attribute (code: barcode)
 + If your are generating a UPC-based barcode:
   + UPC text attribute (code: upc)
