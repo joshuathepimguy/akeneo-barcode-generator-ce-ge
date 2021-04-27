@@ -4,9 +4,10 @@ Automatically generates barcodes based on the UPC or EAN and places the barcode 
 This free and open-source project is not supported.
 
 ## Requirements
-Akeneo Enterprise Edition >= 4.0
+Either:
++ Akeneo Growth Edition
++ Akeneo Community Edition >=4.0
 
-For Growth or Community Edition users, use the version intended for those.
 
 ## The Basics
 The application checks to see if your products have a UPC but no barcode. It will then generate the scannable barcodes and place them into the products.
