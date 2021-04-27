@@ -27,8 +27,7 @@ $symbology  =   "ean-13-pad"; //Choose the type of barcode from the supported op
     ean-13-pad*    code-128        qr-h   gs1-dmtx-s
     ean-13-nopad*  codabar                gs1-dmtx-r
     ean-128        itf
-    * Supported in this version. If you need another format,
-      please reach out to me via Slack or joshua.guinn@akeneo.com
+    * Supported in this version.
 **/
 
 
