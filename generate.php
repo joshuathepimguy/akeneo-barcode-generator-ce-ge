@@ -10,7 +10,7 @@ php-http/guzzle6-adapter:^2.0 http-interop/http-factory-guzzle:^1.0 symfony/dote
 
 require_once __DIR__ . '/vendor/autoload.php';
 include 'barcode.php';
-use \Akeneo\PimEnterprise\ApiClient\AkeneoPimEnterpriseClientBuilder;
+use \Akeneo\Pim\ApiClient\AkeneoPimClientBuilder;
 use \Akeneo\Pim\ApiClient\Search\SearchBuilder;
 use Symfony\Component\Dotenv\Dotenv;
 
@@ -53,7 +53,7 @@ if(file_exists(__DIR__ . '/.env.local')) {
 }
 
 /** SET THE API CLIENT */
-$clientBuilder = new AkeneoPimEnterpriseClientBuilder($_ENV['API_URL']);
+$clientBuilder = new AkeneoPimClientBuilder($_ENV['API_URL']);
 $client = $clientBuilder->buildAuthenticatedByPassword(
     $_ENV['API_CLIENT'], $_ENV['API_SECRET'], $_ENV['API_USERNAME'], $_ENV['API_PASSWORD']);
 
